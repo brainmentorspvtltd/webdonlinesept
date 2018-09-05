@@ -1,0 +1,158 @@
+var a ;
+undefined
+typeof(a);
+"undefined"
+a= 100;
+100
+typeof(a);
+"number"
+a=10000000;
+10000000
+typeof(a);
+"number"
+a=1;
+1
+typeof(a);
+"number"
+a=100.20;
+100.2
+a="Amit";
+"Amit"
+typeof(a);
+"string"
+a='Amit';
+"Amit"
+typeof(a);
+"string"
+a=`Hello How are You
+I am Fine
+Thank u `
+"Hello How are You 
+I am Fine
+Thank u "
+a
+"Hello How are You 
+I am Fine
+Thank u "
+a=100;
+100
+var b = "100";
+undefined
+typeof(a);
+"number"
+typeof(b);
+"string"
+a + b
+"100100"
+c = a + b;
+"100100"
+typeof(c)
+"string"
+a  - b
+0
+a * b;
+10000
+a /b;
+1
+a + parseInt(b);
+200
+a;
+100
+b;
+"100"
+b = "Amit";
+"Amit"
+a + b
+"100Amit"
+a - b
+NaN
+c = a - b;
+NaN
+c;
+NaN
+typeof(c);
+"number"
+c = a /0;
+Infinity
+c;
+Infinity
+typeof(c);
+"number"
+a = true;
+true
+typeof(a);
+"boolean"
+100 + true;
+101
+100 + false;
+100
+var obj = {};
+undefined
+typeof(obj);
+"object"
+obj instanceof Object;
+true
+typeof(Object);
+"function"
+obj.id = 1001;
+1001
+obj.name = "Amit";
+"Amit"
+obj;
+{id: 1001, name: "Amit"}
+var obj = {id:1001,name:"Amit"};
+undefined
+obj.id;
+1001
+obj.name;
+"Amit"
+var x = [10,20,30,40,50];
+undefined
+x = ["Amit",10,20,"Hello",true];
+(5) ["Amit", 10, 20, "Hello", true]
+typeof(x);
+"object"
+x instanceof Array;
+true
+typeof(Array);
+"function"
+x instanceof Object;
+true
+function show(){
+	console.log("I am Show ");
+}
+undefined
+typeof(show);
+"function"
+show();
+VM2575:2 I am Show 
+undefined
+var e= show;
+undefined
+e;
+ƒ show(){
+	console.log("I am Show ");
+}
+typeof(e);
+"function"
+e();
+VM2575:2 I am Show 
+undefined
+a;
+true
+var  a= {id:1001,name:'Ram', salary :99999};
+undefined
+a= null;
+null
+typeof(a);
+"object"
+a;
+null
+a= 100;
+100
+b = "100";
+"100"
+a==b;
+true
+a===b;
+false

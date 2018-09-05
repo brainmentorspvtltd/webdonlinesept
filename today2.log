@@ -1,0 +1,55 @@
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+document.querySelectorAll(".puxlXr");
+NodeList(18) [h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr]
+var h2arr = document.querySelectorAll(".puxlXr");
+undefined
+h2arr;
+NodeList(18) [h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr, h2.puxlXr]0: h2.puxlXr1: h2.puxlXr2: h2.puxlXr3: h2.puxlXr4: h2.puxlXr5: h2.puxlXr6: h2.puxlXr7: h2.puxlXr8: h2.puxlXr9: h2.puxlXr10: h2.puxlXr11: h2.puxlXr12: h2.puxlXr13: h2.puxlXr14: h2.puxlXr15: h2.puxlXr16: h2.puxlXr17: h2.puxlXrlength: 18__proto__: NodeList
+for(let i = 0 ; i<h2arr.length;i++){
+console.log(h2arr[i]);
+}
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Deals of the Day​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​You May Like​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Dual Camera Phones​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Beauty, Sports, Toys & more​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Sports & Fitness​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Minimum 70% Off ​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Best of Electronic Accessories​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Beauty, Sports, Toys & More​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Beauty, Sports, Toys & more​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Beauty & Personal Care​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Electronic Accessories​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Personal & Health Care​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Trending Offers​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Home Improvement Range​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Data Storage Devices​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Beauty & Grooming​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Top Rated​</h2>​
+raven.3.22.3.js:2 <h2 class=​"puxlXr">​Budget Buys For Home ​</h2>​
+undefined
+for(let i = 0 ; i<h2arr.length;i++){
+h2arr[i].innerText = "Hack It";
+//console.log(h2arr[i]);
+}
+"Hack It"
+var spans = document.querySelectorAll("span");
+undefined
+spans.length;
+159
+for(let span of spans){
+span.innerText = "HACK IT ";
+}
+"HACK IT "
