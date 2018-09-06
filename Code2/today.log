@@ -1,0 +1,116 @@
+const salaryOperations = {
+    basicSalary : 0,
+    takeSalary(basicSalary){
+        this.basicSalary = parseFloat(basicSalary);
+    },
+     hra(){
+    return this.basicSalary * 0.3;
+    },
+ da(){
+    return this.basicSalary * 0.2;
+    },
+ ta(){
+    return this.basicSalary * 0.1;
+    },
+ pf(){
+    return this.basicSalary * 0.05;
+    }, 
+gs(){
+    return this.basicSalary + this.hra() + this.da() + this.ta() - this.pf();
+    },
+ tax(){
+    return this.gs() * 0.10;
+    },
+ ns(){
+    return this.gs() - this.tax();
+    }
+
+}
+undefined
+for(let key in salaryOperations){
+	console.log("Key is ",key);
+}
+VM4196:2 Key is  basicSalary
+VM4196:2 Key is  takeSalary
+VM4196:2 Key is  hra
+VM4196:2 Key is  da
+VM4196:2 Key is  ta
+VM4196:2 Key is  pf
+VM4196:2 Key is  gs
+VM4196:2 Key is  tax
+VM4196:2 Key is  ns
+undefined
+for(let key in salaryOperations){
+	if(key=='basicSalary' || key=='takeSalary'){
+	continue;    
+}
+	console.log("Key is ",key);
+}
+VM4278:5 Key is  hra
+VM4278:5 Key is  da
+VM4278:5 Key is  ta
+VM4278:5 Key is  pf
+VM4278:5 Key is  gs
+VM4278:5 Key is  tax
+VM4278:5 Key is  ns
+undefined
+salaryOperations.hra();
+0
+salaryOperations.takeSalary(9000);
+undefined
+salaryOperations.hra();
+2700
+salaryOperations.da();
+1800
+salaryOperations.ta();
+900
+salaryOperations["hra"]();
+2700
+var name = "hra";
+undefined
+salaryOperations[name]();
+2700
+name  ="da";
+"da"
+salaryOperations[name]();
+1800
+for(let key in salaryOperations){
+	if(key=='basicSalary' || key=='takeSalary'){
+	continue;    
+}
+	console.log("Key is ",key, " Calling ",salaryOperations[key]());
+}
+VM4663:5 Key is  hra  Calling  2700
+VM4663:5 Key is  da  Calling  1800
+VM4663:5 Key is  ta  Calling  900
+VM4663:5 Key is  pf  Calling  450
+VM4663:5 Key is  gs  Calling  13950
+VM4663:5 Key is  tax  Calling  1395
+VM4663:5 Key is  ns  Calling  12555
+undefined
+salaryOperations."hra"();
+VM5541:1 Uncaught SyntaxError: Unexpected string
+salaryOperations["hra"]();
+2700
+var emp = {id:1001, name:'Ram', salary : 9000};
+undefined
+for(let key in emp){
+console.log("Key is ",key);
+}
+VM6003:2 Key is  id
+VM6003:2 Key is  name
+VM6003:2 Key is  salary
+undefined
+for(let key in emp){
+console.log("Key is ",key, " Value ",emp[key] );
+}
+VM6087:2 Key is  id  Value  1001
+VM6087:2 Key is  name  Value  Ram
+VM6087:2 Key is  salary  Value  9000
+undefined
+class Item{
+
+}
+undefined
+typeof(Item);
+"function"
