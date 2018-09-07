@@ -1,0 +1,108 @@
+var div = document.createElement("div");
+undefined
+div;
+<div>​</div>​
+var img = document.createElement("img");
+undefined
+img;
+<img>​
+img.src="https://rukminim1.flixcart.com/image/312/312/j7ksia80/mobile/t/4/f/apple-iphone-8-plus-mq8g2hn-a-original-imaexsfhxepbngdq.jpeg?q=70";
+"https://rukminim1.flixcart.com/image/312/312/j7ksia80/mobile/t/4/f/apple-iphone-8-plus-mq8g2hn-a-original-imaexsfhxepbngdq.jpeg?q=70"
+img;
+<img src=​"https:​/​/​rukminim1.flixcart.com/​image/​312/​312/​j7ksia80/​mobile/​t/​4/​f/​apple-iphone-8-plus-mq8g2hn-a-original-imaexsfhxepbngdq.jpeg?q=70">​
+document.body;
+<body>​</body>​
+document.body.appendChild(div);
+<div>​</div>​
+document.body;
+<body>​<div>​</div>​</body>​
+div.appendChild(img);
+<img src=​"https:​/​/​rukminim1.flixcart.com/​image/​312/​312/​j7ksia80/​mobile/​t/​4/​f/​apple-iphone-8-plus-mq8g2hn-a-original-imaexsfhxepbngdq.jpeg?q=70">​
+var arr = [10,20,30,40,50];
+undefined
+arr.find(function(currentValue){
+	return currentValue ==30;
+});
+30
+arr.find(function(currentValue){
+	return currentValue ==330;
+});
+undefined
+arr.find(currentValue=>currentValue==30);
+30
+arr.find(currentValue=>currentValue==430);
+undefined
+arr.find(currentValue=>currentValue==50);
+50
+var t ;
+undefined
+t?"Truthy":"Falsy";
+"Falsy"
+t=null;
+null
+t?"Truthy":"Falsy";
+"Falsy"
+t=0
+0
+t?"Truthy":"Falsy";
+"Falsy"
+t="";
+""
+t?"Truthy":"Falsy";
+"Falsy"
+t="Amit";
+"Amit"
+t?"Truthy":"Falsy";
+"Truthy"
+t=10;
+10
+t?"Truthy":"Falsy";
+"Truthy"
+t=0
+0
+t?"Truthy":"Falsy";
+"Falsy"
+t= {};
+{}
+t?"Truthy":"Falsy";
+"Truthy"
+t=null;
+null
+t?"Truthy":"Falsy";
+"Falsy"
+t=10
+10
+t?"Truthy":"Falsy";
+"Truthy"
+t=NaN;
+NaN
+t?"Truthy":"Falsy";
+"Falsy"
+t=true;
+true
+t?"Truthy":"Falsy";
+"Truthy"
+t=false;
+false
+t?"Truthy":"Falsy";
+"Falsy"
+x;
+VM4899:1 Uncaught ReferenceError: x is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM4899:1
+arr;
+(5) [10, 20, 30, 40, 50]
+var subarr =arr.filter(currentValue=>currentValue>20);
+undefined
+subarr;
+(3) [30, 40, 50]
+subarr.length;
+3
+arr.filter(currentValue=>currentValue>20).length;
+3
+arr = [90,1,20,2,77,111];
+(6) [90, 1, 20, 2, 77, 111]
+arr.sort((first,second)=> first - second);
+(6) [1, 2, 20, 77, 90, 111]
+arr.sort((first,second)=> second - first);
+(6) [111, 90, 77, 20, 2, 1]
