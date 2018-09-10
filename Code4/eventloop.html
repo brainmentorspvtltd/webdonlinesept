@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function process() {
+            console.log(" Process Function start...");
+            var promise = heavy();
+            console.log("result is ", promise);
+            promise.then(function(data) {
+                console.log("RESULT IN PROMISE ", data)
+            }).catch(function() {
+                console.log("Fail....")
+            })
+            console.log("Process function ends...");
+        }
+
+        function heavy() {
+            console.log("Heavy Going to be start after 9 sec")
+            var pr = new Promise((resolve, reject) => {
+                setTimeout(function() {
+                    console.log("Now Heavy has the chance to run :::");
+                    for (let i = 1; i <= 100000; i++) {
+                        for (let j = 1; j <= 10000; j++) {
+
+                        }
+                    }
+                    document.querySelector("#heavy").innerText = "I am Done ";
+                    resolve("Heavy I am Done");
+                    //return " Heavy I am Done.....";
+                }, 9000);
+            })
+
+            console.log("Heavy function is end because of Asynch.....");
+            return pr;
+        }
+        var counter = 1;
+
+        function light() {
+            console.log("Light is going on ", counter);
+            document.querySelector("#count").innerText = counter;
+            counter++;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="process()">Heavy Task</button>
+    <h3>Heavy <span id="heavy"></span></h3>
+    <button onclick="light()">Light Task</button>
+    <p>Light Task :: <span id="count"></span></p>
+</body>
+
+</html>
