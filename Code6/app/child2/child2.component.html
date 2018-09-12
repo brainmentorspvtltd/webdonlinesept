@@ -1,0 +1,9 @@
+<p>
+    Directive Demo
+</p>
+<ul>
+    <li *ngFor="let fruit of fruits;let i=index">
+        <strong *ngIf="fruit=='Apple'"> {{i+1}} &nbsp;&nbsp;{{fruit}}</strong>
+        <i *ngIf="fruit!='Apple'">{{i+1}} &nbsp;&nbsp;{{fruit}}</i>
+    </li>
+</ul>

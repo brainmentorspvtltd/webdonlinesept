@@ -1,0 +1,16 @@
+<h3>Greet App</h3>
+<table>
+    <tr>
+        <td><label for="">First Name</label></td>
+        <td><input type="text" (input)="takeFirstName($event)" placeholder="Type First Name "></td>
+    </tr>
+    <tr>
+        <td><label for="">Last Name</label></td>
+        <td><input type="text" (input)="takeLastName($event)" placeholder="Type Last Name "></td>
+    </tr>
+    <tr>
+        <td><button (click)="greet()"> Greet</button></td>
+        <td><button>Clear</button></td>
+    </tr>
+</table>
+<h2>Welcome <span>{{message}}</span></h2>
