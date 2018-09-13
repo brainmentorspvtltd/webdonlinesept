@@ -1,0 +1,13 @@
+<p>
+    Directive Demo
+</p>
+<h3>Price is {{price|currency:'INR':true}} </h3>
+<h4>Object is {{object|json}}</h4>
+NAme is {{name|prepipe:'TCS':'-'}}
+<ul>
+    <li *ngFor="let fruit of fruits;let i=index">
+        <p [ngStyle]="{'background-color':fruit=='GRapes'?'green':'blue'}" [ngClass]="{'apple':fruit=='apple','orange':fruit=='orange','banana':fruit=='banana'}"> {{i+1}} &nbsp;{{fruit | titlecase}}</p>
+        <!-- <strong *ngIf="fruit=='Apple'"> {{i+1}} &nbsp;&nbsp;{{fruit}}</strong>
+        <i *ngIf="fruit!='Apple'">{{i+1}} &nbsp;&nbsp;{{fruit}}</i> -->
+    </li>
+</ul>

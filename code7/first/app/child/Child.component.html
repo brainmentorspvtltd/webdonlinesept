@@ -1,0 +1,26 @@
+<h4>Message is {{message}}</h4>
+<button (click)="countDown()">Increase Count Down</button>
+<!-- <p>Count is <span> {{count}}</span></p> -->
+<p>Count is <span [innerHTML]="count"> </span></p>
+LABEL ::: <label [innerHTML]="count"></label>
+<div [ngSwitch]="count">
+    <p *ngSwitchCase="1"><span>Ram</span></p>
+    <p *ngSwitchCase="2">Shyam</p>
+    <p *ngSwitchCase="3">Sohan</p>
+    <p *ngSwitchCase="4">Mohan</p>
+    <p *ngSwitchCase="5">Mike</p>
+    <p *ngSwitchCase="6">Tim</p>
+
+    <p *ngSwitchDefault>Unknown</p>
+
+
+</div>
+
+<div [hidden]="isHide">
+    Show Me
+</div>
+<input type="text" placeholder="Enter the Name" (input)="takeInput($event)">
+<br>
+<h3 [class]="cssstyle">Your Name is {{fullName}}</h3>
+<input type="text" [value]="name">
+<button [disabled]="isDisabled">Ok</button>

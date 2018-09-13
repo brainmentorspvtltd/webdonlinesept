@@ -1,0 +1,8 @@
+<h2>Component Interaction Demo</h2>
+<input type="text" placeholder="Type Salary Here" #sal>
+<button (click)="printSalary(sal.value)">Compute tax</button>
+<h5>Salary is {{salary}}</h5>
+<br><br>
+<hr>
+<app-child1 (recsalary)="recSalaryDetails($event)" [basicSalary]="salary"></app-child1>
+<app-print [passSalaryDetails]="salaryDetailObject"></app-print>

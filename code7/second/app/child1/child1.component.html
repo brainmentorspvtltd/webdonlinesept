@@ -1,0 +1,6 @@
+<h4>Child1 Component</h4>
+<p>Basic Salary is {{basicSalary}}</p>
+<div *ngIf="basicSalary>0">
+    <p>Tax is {{tax}}</p>
+    <button (click)="print()">Print Computed Tax</button>
+</div>
