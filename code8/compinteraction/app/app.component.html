@@ -1,0 +1,18 @@
+<h2>Component Interaction Demo</h2>
+<input type="text" placeholder="Type Salary Here" #sal>
+<button (click)="printSalary(sal.value)">Compute tax</button>
+<h5>Salary is {{salary}}</h5>
+<br><br>
+<hr>
+<app-child1 (recsalary)="recSalaryDetails($event)" [basicSalary]="salary"></app-child1>
+<app-print [passSalaryDetails]="salaryDetailObject"></app-print>
+
+<br>
+<hr>
+<h2>Child2 Component Data Access</h2>
+<app-child2></app-child2>
+<app-child2></app-child2>
+<app-child2></app-child2>
+<app-child2></app-child2>
+<input type="text" #address placeholder="Type New Address">
+<button (click)="changeAddress(address.value)">Change Address</button>

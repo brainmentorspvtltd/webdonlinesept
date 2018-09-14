@@ -1,0 +1,10 @@
+<h4>Child1 Component</h4>
+<p>Basic Salary is {{basicSalary}}</p>
+<div *ngIf="basicSalary>0">
+    <p>Tax is {{tax}}</p>
+    <button (click)="print()">Print Computed Tax</button>
+</div>
+
+<hr> Send Data to Child2 Using Service
+<input #msg type="text" placeholder="Type Data to Send">
+<button (click)="sendMessageToChild2(msg.value)">Send Message to Child2</button>
