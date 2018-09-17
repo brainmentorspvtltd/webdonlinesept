@@ -1,0 +1,60 @@
+/* because body tag takes 8px of margin */
+
+body {
+    margin: 0px;
+}
+
+#header {
+    background-color: lightsalmon;
+    position: fixed;
+    top: 0px;
+}
+
+#header .logo {
+    float: left;
+    width: 18%;
+}
+
+#header img {
+    width: 100%;
+}
+
+#main-nav {
+    float: right;
+    width: 80%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#main-nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.blank {
+    clear: both;
+}
+
+p {
+    font-size: 24px;
+}
+
+#content {
+    margin-top: 75px;
+    text-align: center;
+}
+
+#content img {
+    margin: 0px 10px 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Click on like button</h1>
+    <button onclick="likeCounter()">Like</button>
+    <span id="counter">0</span>
+
+    <script>
+        var count = 0;
+
+        function likeCounter() {
+            count += 1;
+            document.getElementById("counter").innerHTML = count;
+            saveCounter();
+        }
+
+        function saveCounter() {
+            localStorage.setItem("counter", count);
+        }
+
+        function loadCounter() {
+            var count = localStorage.counter;
+            document.getElementById("counter").innerHTML = count;
+        }
+        loadCounter()
+    </script>
+
+</body>
+
+</html>

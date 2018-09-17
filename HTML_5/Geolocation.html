@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Geolocation Example</h1>
+
+    <button onclick="geo()">Show Location</button>
+
+    <script>
+        function geo() {
+            navigator.geolocation.getCurrentPosition(handle_geolocation);
+        }
+
+        function handle_geolocation(positions) {
+            alert("Lat : " + positions.coords.latitude + " " + "Lon : " + positions.coords.longitude);
+        }
+    </script>
+</body>
+
+</html>
