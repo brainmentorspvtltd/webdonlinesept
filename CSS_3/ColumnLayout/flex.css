@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    align-items: stretch;
+}
+
+.column {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 20%;
+}
+
+img {
+    width: 100%;
+}

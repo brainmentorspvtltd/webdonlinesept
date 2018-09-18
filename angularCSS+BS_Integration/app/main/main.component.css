@@ -1,0 +1,13 @@
+.red,
+.green {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
